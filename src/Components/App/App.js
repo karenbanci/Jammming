@@ -97,12 +97,17 @@ export class App extends React.Component {
               <a
                 href="https://www.linkedin.com/in/karen-caroline-honorio-banci-198827112/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <i class="fa-brands fa-linkedin"></i>
               </a>
             </li>
             <li>
-              <a href="https://github.com/karenbanci" target="_blank">
+              <a
+                href="https://github.com/karenbanci"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i class="fa-brands fa-github-square"></i>
               </a>
             </li>
