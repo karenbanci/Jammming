@@ -16,7 +16,7 @@ export class SearchBar extends React.Component {
 
 // passar o estado do term para onSearch
   search() {
-    this.props.onSearch(this.props.term);
+    this.props.onSearch(this.state.term);
   }
 
 // define o estado do term para a barra de pesquisa para o valor do destino do evento
@@ -28,7 +28,7 @@ export class SearchBar extends React.Component {
     return (
       <div className="SearchBar">
         <input onChange={this.handleTermChange} placeholder="Enter A Song, Album, or Artist" />
-        <button className="SearchButton">SEARCH</button>
+        <button className="SearchButton" onClick={this.search} >SEARCH</button>
       </div>
     )
   }
