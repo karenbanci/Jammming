@@ -44,6 +44,31 @@ h2 {
   width: 100%;
 }
 
+.footer {
+  position: inherit;
+  display: flex;
+  justify-content: center;
+  padding: 0.6rem 0;
+  background-color: #010c3f;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer ul {
+  display: flex;
+  padding: 0 10px;
+}
+
+a {
+  padding: 0 10px;
+  color: #fff;
+  font-size: 1rem;
+}
+
 @media only screen and (max-width: 1020px) {
   .App-playlist {
     align-items: center;

@@ -6,7 +6,6 @@ import {SearchResults} from '../SearchResults/SearchResults';
 import {Playlist} from '../Playlist/Playlist';
 
 import Spotify from '../../util/Spotify';
-
 export class App extends React.Component {
   constructor(props) {
     super(props);
@@ -74,16 +73,40 @@ export class App extends React.Component {
           Ja<span className="highlight">mmm</span>ing
         </h1>
         <div className="App">
-          <SearchBar onSearch={this.search}/>
+          <SearchBar onSearch={this.search} />
 
           <div className="App-playlist">
-            <SearchResults searchResults={this.state.searchResults}
-            onAdd={this.addTrack}/>
+            <SearchResults
+              searchResults={this.state.searchResults}
+              onAdd={this.addTrack}
+            />
 
-            <Playlist playlistName={this.state.playlistName}
-            playlistTracks={this.state.playlistTracks} onRemove={this.removeTrack} onNameChange={this.updatePlaylistName} onSave={this.savePlaylist}/>
-
+            <Playlist
+              playlistName={this.state.playlistName}
+              playlistTracks={this.state.playlistTracks}
+              onRemove={this.removeTrack}
+              onNameChange={this.updatePlaylistName}
+              onSave={this.savePlaylist}
+            />
           </div>
+        </div>
+        <div className="footer">
+          <footer>By Karen Banci 2022</footer>
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/karen-caroline-honorio-banci-198827112/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/karenbanci" target="_blank">
+                <i class="fa-brands fa-github-square"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     );
