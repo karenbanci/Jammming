@@ -1,5 +1,5 @@
 const clientId = "c44fa8ee2e744374a6e5be4b1f9835d2";
-const redirectURI = 'http://localhost:3000/';
+const redirectURI = "http://jammming-portfolio.surge.sh";
 let accessToken;
 
 
@@ -99,7 +99,7 @@ const Spotify = {
           }
         );
       })
-    });  
+    });
   }
 }
 
